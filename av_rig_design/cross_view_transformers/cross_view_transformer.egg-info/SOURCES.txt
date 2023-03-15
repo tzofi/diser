@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cross_view_transformer.egg-info/PKG-INFO
+cross_view_transformer.egg-info/SOURCES.txt
+cross_view_transformer.egg-info/dependency_links.txt
+cross_view_transformer.egg-info/not-zip-safe
+cross_view_transformer.egg-info/top_level.txt
