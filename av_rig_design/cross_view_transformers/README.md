@@ -1,15 +1,6 @@
 # <div align="center">**Cross View Transformers**</div>
 
 
-To run on supercloud, check out submit.sh -- should be relatively self explanatory.
-
-All dataloading code is in `` cross_view_transformer/data/carla_dataset.py ``
-
-
-
-
-
-
 ------------------
 
 <div align="center"><img src="docs/assets/teaser.jpg" width="65%"></div>
