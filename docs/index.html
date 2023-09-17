@@ -1,1 +1,408 @@
-Hello world
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+
+<style type="text/css">
+body {
+	font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px;
+}
+h1 {
+	font-weight:300;
+	line-height: 1.15em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+a:link,a:visited {
+	color: #1367a7;
+	text-decoration: none;
+}
+a:hover {
+	color: #208799;
+}
+h1, h2, h3 {
+	text-align: center;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2, h3 {
+	font-weight: 400;
+	margin: 16px 0px 4px 0px;
+}
+.paper-title {
+	padding: 16px 0px 16px 0px;
+}
+section {
+	margin: 32px 0px 32px 0px;
+	text-align: justify;
+	clear: both;
+}
+.col-5 {
+	 width: 20%;
+	 float: left;
+}
+.col-4 {
+	 width: 25%;
+	 float: left;
+}
+.col-2 {
+	 width: 50%;
+	 float: left;
+}
+.row, .author-row, .affil-row {
+	 overflow: auto;
+}
+.author-row, .affil-row {
+	font-size: 20px;
+}
+.row {
+	margin: 16px 0px 16px 0px;
+}
+.authors {
+	font-size: 18px;
+}
+.affil-row {
+	margin-top: 16px;
+}
+.teaser {
+	max-width: 100%;
+}
+.text-center {
+	text-align: center;
+}
+.screenshot {
+	width: 256px;
+	border: 1px solid #ddd;
+}
+.screenshot-el {
+	margin-bottom: 16px;
+}
+hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ddd;
+	margin: 0;
+}
+.material-icons {
+	vertical-align: -6px;
+}
+p {
+	line-height: 1.25em;
+}
+.caption_justify {
+	font-size: 16px;
+	/*font-style: italic;*/
+	color: #666;
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 64px;
+}
+.caption {
+	font-size: 16px;
+	/*font-style: italic;*/
+	color: #666;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 64px;
+}
+.caption_inline {
+	font-size: 16px;
+	/*font-style: italic;*/
+	color: #666;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+.caption_bold {
+	font-size: 16px;
+	/*font-style: italic;*/
+	color: #666;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+video {
+	display: block;
+	margin: auto;
+}
+figure {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+figure {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#bibtex pre {
+	font-size: 14px;
+	background-color: #eee;
+	padding: 16px;
+}
+.blue {
+	color: #2c82c9;
+	font-weight: bold;
+}
+.orange {
+	color: #d35400;
+	font-weight: bold;
+}
+.flex-row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.paper-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 18px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+
+  background-color: #1367a7;
+  color: #ecf0f1 !important;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  font-weight: 600;
+}
+.paper-btn-parent {
+	display: flex;
+	justify-content: center;
+	margin: 16px 0px;
+}
+.paper-btn:hover {
+	opacity: 0.85;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.venue {
+	color: #1367a7;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#home1 { 
+    width: 47.5%; 
+    height: 300px; 
+    float: left; 
+    margin-right: 5%;
+} 
+#home2 { 
+    width: 47.5%; 
+    height: 300px; 
+    float: left; 
+}
+</style>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+	<title>DISeR: Designing Imaging Systems with Reinforcement Learning</title>
+	<meta property="og:description" content="DISeR: Designing Imaging Systems with Reinforcement Learning"/>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@mmalex">
+	<meta name="twitter:title" content="DISeR: Designing Imaging Systems with Reinforcement Learning">
+	<meta name="twitter:description" content="A paper from MIT that proposes a method for co-designing imaging systems with task-specific neural networks using reinforcement learning.">
+	<meta name="twitter:image" content="https://tzofi.github.io/diser/assets/twitter.jpg">
+</head>
+
+<body>
+<div class="container">
+	<div class="paper-title">
+		<h1>DISeR: Designing Imaging Systems with Reinforcement Learning</h1>
+	</div>
+
+	<div id="authors">
+		<div class="author-row">
+            <div class="col-5 text-center"><a href="https://tzofi.github.io/">Tzofi Klinghoffer*</a></div>
+            <div class="col-5 text-center"><a href="https://www.media.mit.edu/people/ktiwary/overview">Kushagra Tiwary*</a></div>
+            <div class="col-5 text-center"><a href="https://www.media.mit.edu/people/nbehari/overview">Nikhil Behari</a></div>
+            <div class="col-5 text-center"><a href="">Bhavya Agrawalla</a></div>
+            <div class="col-5 text-center"><a href="https://www.media.mit.edu/people/raskar/overview/">Ramesh Raskar</a></div>
+		</div>
+        <div class="author-row">
+            
+        <div class="affil-row">
+            <div class="col-1 text-center">Massachusetts Institute of Technology</a></div>
+        </div>
+
+		<div class="affil-row">
+			<div class="venue text-center"><b><a href="https://iccv2023.thecvf.com/">International Conference on Computer Vision, 2023</a></b></div>
+		</div>
+
+		<div style="clear: both">
+			<div class="paper-btn-parent">
+				<a class="paper-btn" href="assets/tzofi2023diser.pdf">
+					<span class="material-icons"> description </span>
+					Paper
+				</a>
+				<a class="paper-btn" href="">
+					<span class="material-icons"> description </span>
+					Code (coming soon!)
+				</a>
+				<a class="paper-btn" href="">
+					<span class="material-icons"> description </span>
+					Video (coming soon!)
+				</a>
+			</div>
+		</div>
+	</div>
+
+    <section id="teaser">
+            <figure style="width: 100%;">
+                <a href="assets/overview.png">
+                    <img width="70%" src="assets/overview.png" class="center">
+                </a>
+                <p class="caption" style="margin-bottom: 1px;  text-align: justify">
+                   We propose a new way to codesign imaging systems and task-specific perception models. The camera designer selects imaging hardware candidates, which are used to capture observations in simulation. The perception model is then updated and computes the reward for the camera designer using the captured observations. In our work, we implement the camera designer with reinforcement learning and the perception model with a neural network.
+                </p>
+            </figure>
+    </section>
+
+	<section id="abstract"/>
+		<h2>Abstract</h2>
+		<hr>
+		<p>
+            Imaging systems consist of cameras to encode visual information about the world and perception models to interpret this encoding. Cameras contain (1) illumination sources, (2) optical elements, and (3) sensors, while perception models use (4) algorithms. Directly searching over all combinations of these four building blocks to design an imaging system is challenging due to the size of the search space. Moreover, cameras and perception models are often designed independently, leading to sub-optimal task performance. In this paper, we formulate these four building blocks of imaging systems as a context-free grammar (CFG), which can be automatically searched over with a learned camera designer to jointly optimize the imaging system with task-specific perception models. By transforming the CFG to a state-action space, we then show how the camera designer can be implemented with reinforcement learning to intelligently search over the combinatorial space of possible imaging system configurations. We demonstrate our approach on two tasks, depth estimation and camera rig design for autonomous vehicles, showing that our method yields rigs that outperform industry-wide standards. We believe that our proposed approach is an important step towards automating imaging system design.
+		</p>
+	</section>
+
+	<section id="paper">
+		<h2>Paper</h2>
+		<hr>
+		<div class="flex-row">
+			<div style="box-sizing: border-box; padding: 16px; margin: auto;">
+				<a href="assets/tzofi2023diser.pdf"><img class="screenshot" src="assets/paper-thumbnail.png"></a>
+			</div>
+			<div style="width: 60%">
+				<p><b>DISeR: Designing Imaging Systems with Reinforcement Learning</b></p>
+				<p>Tzofi Klinghoffer*, Kushagra Tiwary*, Nikhil Behari, Bhavya Agrawalla, Ramesh Raskar</p>
+
+				<div><span class="material-icons"> description </span><a href="assets/tzofi2023diser.pdf"> Paper preprint (PDF, 3.4 MB)</a></div>
+				<div><span class="material-icons"> description </span><a href=""> arXiv version</a></div>
+				<div><span class="material-icons"> insert_comment </span><a href="assets/tzofi2023diser.bib"> BibTeX</a></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="method"/>
+		<h2>Method</h2>
+		<hr>
+            <figure style="width: 100%;">
+                <a href="assets/method.png">
+                    <img width="100%" src="assets/method.png">
+                </a>
+                <p class="caption" style="margin-bottom: 1px;  text-align: justify">
+                   Our approach allows a camera configuration and perception model (PM) to be co-designed for task-specific imaging applications. At every step of the optimization, the camera designer (CD), implemented with reinforcement learning, proposes candidate camera configurations (1-2), which are used to capture observations and labels in a simulated environment (3-4). The observations and labels are added to the perception buffer (5) and used to compute the loss and reward, while the N most recent observations in the perception buffer are used to train the PM. The reward is propagated to the CD agent which proposes additional changes to the candidate camera configuration. After the episode terminates, the CD agent is trained using proximal policy optimization (PPO) until convergence.
+                </p>
+            </figure>
+		<p>
+            Designing camera systems is non-trivial due to the vast number of engineering decisions to be made, including which parameters to use for illumination, optics, and sensors. We define a language for imaging system design using context-free grammar (CFG), which allows imaging systems to be represented as strings. The CFG serves as a search space for which search algorithms can then be used to automate imaging system design. We refer to such an algorithm as a camera designer (CD) and implement it with RL. RL allows us to search over imaging systems without relying on differentiable simulators and can scale to the combinatorially large search space of the CFG. Inspired by how animal eyes and brains are tightly integrated, our approach jointly trains the CD and PM, using the accuracy of the PM to inform how the CD is updated in training. Because searching over the entire CFG is infeasible with available simulators, we take the first step of validating that RL can be used to search over subsets of the CFG, including number of cameras, pose, field of view (FoV), and light intensity. First, we apply our method to depth estimation, demonstrating the viability of jointly learning imaging and perception. Next, we tackle the practical problem of designing a camera rig for AVs and show that our approach can create rigs that lead to higher perception accuracy than industry-standard rig designs.
+		</p>
+	</section>
+
+	<section id="results"/>
+		<h2>Results</h2>
+        <figure style="width: 100%;">
+             <video id='home1' width="50%" controls muted loop autoplay>
+                <source src="assets/our_rig.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+             <video id='home2' width="50%" controls muted loop autoplay>
+                <source src="assets/nuscenes_rig.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption" style="margin-bottom: 1px;  text-align: center">
+                (Left) Camera rig designed with our approach, (Right) NuScenes camera rig
+            </p>
+        </figure>
+
+        <figure style="width: 100%;">
+             <video id='home1' width="50%" controls muted loop autoplay>
+                <source src="assets/vid_ours.m4v">
+                Your browser does not support the video tag.
+            </video>
+             <video id='home2' width="50%" controls muted loop autoplay>
+                <source src="assets/vid_nuscenes.m4v">
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption" style="margin-bottom: 1px;  text-align: center">
+                (Left) Images captured with camera rig designed with our approach, (Right) Images captured with NuScenes camera rig
+            </p>
+        </figure>
+
+
+		<hr>
+		<p>
+            We validate our approach with two tasks: (1) designing AV camera rigs for bird's eye view (BEV) segmentation, and (2) depth estimation.
+            <br>
+            <br>
+            <strong>AV Camera Rig Design:</strong> We apply our method to optimize an AV camera rig for the perception task of bird's eye view (BEV) segmentation by jointly training the camera designer (CD) and perception model (PM). The CD must choose both the number of cameras and the placement and FoV of each. The PM is trained with the output images from each candidate camera rig in simulated (CARLA) and its test accuracy (IoU) is used as the reward to update the CD. We find that the rigs created with our approach lead to higher BEV segmentation accuracy in our environment compared to the industry-standard nuScenes rig. The camera rig and resulting images of both our approach and nuScenes are visualized above. When tasked with designing AV camera rigs, the CD learns:
+                <ol type="1">
+                    <li><strong>Increase overlap between views:</strong> Increasing overlap between views allows objects to be visible in multiple images.</li>
+                    <li><strong>Increase camera height:</strong> The CD learns to increase camera height, improving IoU of both occluded and unoccluded objects.</li>
+                    <li><strong>Reduce camera pitch:</strong> The CD reduces camera pitch, in effect maximizing pixels on the road.</li>
+                    <li><strong>Vary FoV:</strong> By varying the FoV among placed cameras, the CD may have learned a tradeoff between FoV and object resolution.</li>
+                </ol>
+            <br>
+            <br>
+            <strong>Depth Estimation:</strong> We validate our approach can learn the concept of stereo and multi-view depth estimation when monocular cues are unavailable. We train the CD and PM to estimate the depth of an object in an environment void of monocular cues. As a result, the CD learns to place multiple cameras, maximizing the baseline between each, to maximize depth estimation accuracy.
+		</p>
+	</section>
+
+	<section id="bibtex">
+		<h2>Citation</h2>
+		<hr>
+		<pre><code>@inproceedings{tzofi2023diser,
+    author = {Klinghoffer, Tzofi and Tiwary, Kushagra and Behari, Nikhil and 
+        Agrawalla, Bhavya and Raskar, Ramesh},
+    title = {DISeR: Designing Imaging Systems with Reinforcement Learning},
+    booktitle = {International Conference on Computer Vision},
+    year = {2023}
+}
+
+</code></pre>
+	</section>
+
+	<section id="acknowledgements">
+		<h2>Acknowledgements</h2>
+		<hr>
+		<div class="row">
+			<p>
+            We thank Siddharth Somasundaram for his diligent proofreading of the paper. KT was supported by the SMART Contract IARPA Grant #2021-20111000004. We also thank Systems &amp Technology Research (STR).
+			</p>
+		</div>
+	</section>
+</div>
+
+* Equal contribution.
+</body>
+</html>
