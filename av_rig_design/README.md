@@ -4,7 +4,7 @@ The code in this repo is used for training an RL agent to design an autonomous v
 
 ## Autonomous Vehicle Rig Design
 
-All code for AV rig design can be found in the av_rig_design directory. CARLA is a dependency of this code. It must be installed and the server must be running per the CARLA documentation. The CARLA port and traffic manager port can be specified in the config.
+All code for AV rig design can be found in this directory. CARLA is a dependency of this code. It must be installed and the server must be running per the CARLA documentation. The CARLA port and traffic manager port can be specified in the config.
 
 To run training:
 
