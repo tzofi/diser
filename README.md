@@ -1,6 +1,11 @@
 # DISeR: Designing Imaging Systems with Reinforcement Learning
 
-Codebase for submission #11360. Code will be cleaned up and made publicly available upon acceptance.
+Our initial code is public! A cleaned version with improved documentation will be released by the end of __October 2023__. Stay tuned!
+
+> __DISeR: Designing Imaging Systems with Reinforcement Learning__  
+> [Tzofi Klinghoffer*](https://tzofi.github.io/), [Kushagra Tiwary*](https://www.media.mit.edu/people/ktiwary/overview/), [Nikhil Behari](https://www.media.mit.edu/people/nbehari/overview/), [Bhavya Agrawalla](https://scholar.google.com/citations?user=TdJ4Rk4AAAAJ&hl), [Ramesh Raskar](https://www.media.mit.edu/people/raskar/overview/)  
+> _International Conference on Computer Vision (_ICCV_), 2023_  
+> __[Project page](https://tzofi.github.io/diser)&nbsp;/ [Paper](https://tzofi.github.io/diser/assets/tzofi2023diser.pdf)&nbsp;/ [BibTeX](https://tzofi.github.io/diser/assets/tzofi2023diser.bib)__
 
 ## Stereo Depth
 
