@@ -1,4 +1,4 @@
-# DISeR: Automating AV Camera Rig Design
+# Automating AV Camera Rig Design
 
 The code in this repo is used for training an RL agent to design an autonomous vehicle (AV) camera rig. Data from each candidate camera rig is simulated in [CARLA](https://carla.org/). The perception model, implemented as [Cross View Transformers](https://github.com/bradyz/cross_view_transformers), is jointly trained on the task of bird's eye view segmentation.
 
