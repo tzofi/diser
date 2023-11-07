@@ -1,6 +1,6 @@
 # DISeR: Designing Imaging Systems with Reinforcement Learning
 
-Our initial code is public! A cleaned version with improved documentation will be released by the end of __October 2023__. Stay tuned!
+Our initial code is public! A cleaned version with improved documentation will be released by the end of __November 2023__. Stay tuned!
 
 > __DISeR: Designing Imaging Systems with Reinforcement Learning__  
 > [Tzofi Klinghoffer*](https://tzofi.github.io/), [Kushagra Tiwary*](https://www.media.mit.edu/people/ktiwary/overview/), [Nikhil Behari](https://www.media.mit.edu/people/nbehari/overview/), [Bhavya Agrawalla](https://scholar.google.com/citations?user=TdJ4Rk4AAAAJ&hl), [Ramesh Raskar](https://www.media.mit.edu/people/raskar/overview/)  
